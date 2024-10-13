@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Main Page</title>
+</head>
+<body>
+
+    <header>
+        <img src="/images/Union.png" alt="">
+        <a href="#" class="logo"><span>Aka</span>dil</a>
+        <nav class="navbar">
+            <a href="index.html"  class="active">Home</a>
+            <a href="family.html">Family</a>
+            <a href="education.html">Education</a>
+            <a href="interests.html">Interests</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a data-modal="consultation" href="#" class="contact first">Contact me</a>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h3>Hi</h3>
+            <h1>Im a <span>Akadil</span> <br> a front-end developer<span></span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+            <div class="btn-box">
+                <button data-modal="consultation"  class="btn-1">Contact me</button>  
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="/images/photo_5339294555893260986_x (1).jpg" alt="">
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about-img">
+            <img src="/images/photo_5339294555893260986_x (1).jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">
+                About me
+            </h2>
+            <h3>Frontend Developer</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </section>
+
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle"></div>
+            <div class="modal__descr"></div>
+            <form class="feed-form" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input type="phone" required placeholder="Ваш телефон" type="number">
+                <input type="email" required placeholder="Ваш E-mail" type="email">
+                <button class="button buttom_submit">Отправить данные</button>
+            </form>
+        </div>
+        <div class="modal" id="order" >
+            <div class="modal__close" >&times;</div>
+            <div class="modal__subtitle">Заполните поля</div>
+            <div class="modal__descr">Для связи со мной</div>
+            <form class="feed-form" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input type="phone" required placeholder="Ваш телефон" type="number">
+                <input type="email" required placeholder="Ваш E-mail" type="email">
+                <button class="button button_submit">Отправить данные</button>
+            </form>
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Спасибо!</div>
+            <div class="modal__descr">Я обязательно с вами свяжусь!</div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="/js/indexScript.js"></script>
+    
+</body>
+</html>
